@@ -1,0 +1,110 @@
+# -打印字符三角形
+"""
+*
+* *
+* * *
+* * * *
+* * * * *
+"""
+
+# 第一种
+
+print(*)
+print(* *)
+print(* * *)
+print(* * * *)
+print(* * * * *)
+
+# 第二种
+
+for i in range(5):
+  for j in range(i+1):
+    print("* ",end="")
+  print()
+  
+ 
+ 
+ 
+ 
+ # 打印空心的
+ """
+*
+* *
+*   *
+*     *
+* * * * *
+"""
+ 
+print("*")
+print("* *")
+print("*   *")
+print("*     *")
+print("* * * * *")
+
+
+
+## 另一种
+for i in range(5):
+  if j == 4:
+    print("* ",end="")
+    continue
+  if j == 0 j == i:
+    print("* ",end="")
+  else:
+    print("  ",end="")
+    
+ print()
+ 
+ 
+ 
+ # 打印实心倒三角
+ 
+ """
+* * * * *
+* * * *
+* * *
+* *
+*
+ """
+# 第一种 
+# i  = for 控制行
+# j  = for 控制列
+
+for i in range(5):
+  for j in range(5-i):
+    print("* ",end="")
+  print()
+  
+  
+# 另一种写法    
+  
+for i in range(5,0,-1):
+  for j in range(i,0,-1):
+    print("* ",end="")
+  print()
+  
+
+
+ # 打印空心倒三角
+ 
+ """
+* * * * *
+*     *
+*   *
+* *
+*
+ """
+# 第一种
+  
+for i in range(5):
+  for j in range(5-i):
+    if i == 0:      
+     print("* ",end="")  # 如果i=0 是第一行 就这样子打
+     continue
+     
+    else:
+      print()
+  print()
+
+
+
